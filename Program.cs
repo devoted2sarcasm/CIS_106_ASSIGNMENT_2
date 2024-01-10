@@ -1,4 +1,5 @@
 ﻿using CIS_106_ASSIGNMENT_2.models;
+using CIS_106_ASSIGNMENT_2.services;
 
 // Defined available power ups.
 PowerUp rocketBoots = new PowerUp{
@@ -89,3 +90,6 @@ List<Level> levels = new List<Level> {
         }
     }
 };
+
+// This calls the method to generate the Progress Report. Go to the ProgressReportGenerator class to implement the GenerateProgressReport method!
+ProgressReportGenerator.GenerateProgressReport(characters, levels);
